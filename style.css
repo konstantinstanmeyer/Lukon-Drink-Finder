@@ -1,0 +1,105 @@
+body{
+    background-color: lightpink
+}
+
+#header-text {
+    text-align: center;
+}
+
+ul li{
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0.5px solid white;
+    margin: 40px;
+}
+
+#alcohol{
+    text-align:center;
+}
+
+*{
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+div#side-column{
+    float: left;
+
+}
+
+#drink-list{
+    float: left;
+    border: 0.5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+    width: 760px;
+}
+
+#liked-drinks{
+    float: left;
+    border: 0.5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+    padding-right: 100px;
+}
+
+#recommended-drinks{
+    float: left;
+    border: 0.5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+#liked-drinks-list{
+    display: flex;
+    flex-direction: column;
+}
+
+#recommended-drinks-list{
+    display: flex;
+    flex-direction: column;
+}
+
+#liked-header{
+    margin: 10px;
+    padding-left:10px;
+}
+#recommended-header{
+    margin: 10px;
+    padding-left:10px;
+}
+
+#matching-results{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#drink-info{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#image{
+    /* position: absolute; */
+    float: right;
+}
+
+#drink-name-box{
+    /* position: absolute; */
+    float: left;
+}
+
+.main-text:hover{
+    background-color: white;
+    color: lightpink;
+    cursor: pointer;
+}
+
+.main-text{
+    box-shadow: 2px 2px 1px white;
+}
+
+.transparent {
+    background:rgba(255,255,255,0.2)
+  }
