@@ -1,10 +1,39 @@
-fetch('http://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin/drinks')
+fetch('http://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin')
     .then(response => response.json())
     .then(ginData => {
-        console.log(ginData)
+        grabId(ginData)
     })
 
+function grabId(data){
+    let drinkIds = [];
+    let grabbedPics = [];
+    let drinkNames = [];
+    for(let i=0; i < 20; i++){
+        if(i < 20){
+            const element = data['drinks'][i]['idDrink'];
+            drinkIds.push(element);
+        } else {
+            return drinkIds;
+        }
+    }
+    for(let i=0; i < 20; i++){
+        if(i < 20){
+            const element = data['drinks'][i]['strDrink']
+            drinkNames.push(element);
+        } else {
+            return drinkNames;
+        }
+    }
+    console.log(drinkIds);
+    console.log(drinkNames)
+};
 
+function getInfo(newArray){
+    let passedRecipe = [];
+    let passedMeasure = [];
+    let ingredients = [];
+};
+getInfo();
 
 document.querySelector('#home').addEventListener('click', e => {
     alert('HOME: PAGE NOT FOUND')
