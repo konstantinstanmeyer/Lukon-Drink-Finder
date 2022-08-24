@@ -3,80 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link type="text/css" rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktail Extravaganza</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .drink-pic{
+            position: relative;
+            height: 140px;
+            top: 40px;
+            right: -40px;
+        }
+        .drink-name{
+            position: relative;
+            right: -200px;
+            top: -120px;
+        }
+        .ingredients{
+            position: relative;
+            right: -170px;
+            top: -70px;
+        }
+        .heart{
+            position: relative;
+            top: -198px;
+            right: -170px;
+            font-size: 25px;
+        }
+        .vodka:hover{
+            box-shadow: 0px 0px 10px lightblue;
+        }
+        #logo{
+            position: relative;
+            height: 50px;
+            top: -15px;
+
+        }
+    </style>
 </head>
 <body>
-    <div id="content">
-        <div id="header">
-            <h1 id="header-text">Alcohol of Choice?</h1>
-        </div>
-        <div id="nav-bar">
-            <nav>
-                <ul id="alcohol">
-                    
-                    <li id="vodka" class="main-text">Vodka</li>
-                    
-                    
-                    
-                    <li id="rum" class="main-text">Rum</li>
-                        
-                    
-                    
-                        <li id="tequila" class="main-text">Tequila</li>
-                        
-                    
-                        <li id="whiskey" class="main-text">Whiskey</li>
-                        
-                    
-                </ul>
-            </nav>
-        </div>
-        
-        <div id="side-column">
-            <div id="liked-drinks-list">
-                <div id="liked-drinks" class="transparent">
-                    <h2 id="liked-header" class="sidebar-headers">Liked Drinks:</h2>
-                    <ul id="liked-list">
-                        <!-- give pushed objects a class of given-drinks -->
-                        <p class="given-drinks">asd</p>
-                        <p class="given-drinks">yasd</p>
-                        <p class="given-drinks">asdkn</p>
-                    </ul>
-                </div>    
+    <div id="nav-menu">
+        <ul class="nav">
+            <div class="logo">
+                <img id="logo" src="images/logo.png">
+                <img id="ship-picture" src="https://static.vecteezy.com/system/resources/previews/000/560/561/non_2x/vector-illustration-of-a-bottle-with-a-ship.jpg">
             </div>
-            <div id="recommended-drinks-list">   
-                <div id="recommended-drinks" class="transparent">
-                    <h2 id="recommended-header" class="sidebar-headers">Recommended Drinks:</h2>
-                    <ul id="random-list">
-                        <p class="given-drinks">asd</p>
-                        <p class="given-drinks">yasd</p>
-                        <p class="given-drinks">asdkn</p>
-                    </ul>
-                </div>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="banner">
+        <img class="image-banner" id="banner-image" src="https://cdn.pixabay.com/photo/2016/11/14/22/18/beach-1824855_1280.jpg">
+        <div id="memo">
+            <div id="memo-image">
+                <img id="memo-pic" src="https://www.transparentpng.com/download/cocktail/H3AkUN-cocktail-icon-clipart.png">
             </div>
-        </div>
-        <div id="drink-list" class="transparent">
-            <div id="drink-list-info">
-                <h1 id="matching-results">Matching Results:</h1>
-                <div id="drink-info">
-                    <div id="image-block">
-                        <img src="" id="image">
-                    </div>
-                    <h2 id="drink-name">Drink Name ♡</h2>
-                    <img src="">
-                    <h2 id="ingredients">Ingredients:</h2>
-                    <ul id="ingredients-list">
-                    
-                    </ul>
-                    <p id="recipe">
-                    
-                    </p>
-                </div>
-            </div>   
+            <div id="memo-text">
+                <h1 id="slogan">Hone Your Bartending Skills |</h1>
+                <p id="slogan-content">Our website offers a clean, easy-to-navigate space to make drinks with whichever alcohol is at hand.</p>
+            </div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <h2>choose your liquor...</h2>
+    <div id="selection-menu">
+        <div class="vodka">
+            <h4>Vodka</h4>
+            <img id="vodka-pic" src="https://pngimg.com/uploads/vodka/vodka_PNG73893.png">
+        </div>
+        <div class="vodka">
+            <h4>Whiskey</h4>
+            <img id="whiskey-pic" src="https://picng.com/upload/whisky/png_whisky_17218.png">
+        </div>
+        <div class="vodka">
+            <h4>Rum</h4>
+            <img id="rum-pic" src="https://boissonsdemonde.com/wp-content/uploads/2021/10/IMG_6989.png">
+        </div>
+        <div class="vodka">
+            <h4>Tequila</h4>
+            <img id="tequila-pic" src="https://pngitem.com/pimgs/m/147-1473539_tequila-bottles-png-patron-tequila-silver-png-transparent.png">
+        </div>
+    </div>
+    <div class="results">
+        <div class="image-result">
+            <img class="drink-pic" src="https://pngitem.com/pimgs/m/147-1473539_tequila-bottles-png-patron-tequila-silver-png-transparent.png">
+        </div>
+        <h3 class="drink-name">*Drink Name*</h3>
+        <p class="ingredients">Ingredients:</p>
+        <div class="heart">
+            <span>♡</span>
+        </div>
+    </div>
+    <img src="/assets/logo.png">
 </body>
 </html>

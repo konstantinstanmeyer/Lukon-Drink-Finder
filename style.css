@@ -1,105 +1,153 @@
 body{
-    background-color: lightpink
-}
-
-#header-text {
-    text-align: center;
-}
-
-ul li{
-    display: inline;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 0.5px solid white;
-    margin: 40px;
-}
-
-#alcohol{
-    text-align:center;
-}
-
-*{
+    padding: 0;
+    margin: 0;
     font-family:'Courier New', Courier, monospace;
-    color: white;
+    content:center;
 }
 
-div#side-column{
-    float: left;
-
-}
-
-#drink-list{
-    float: left;
-    border: 0.5px rgba(255,255,255,0.5);
-    border-radius: 15px;
-    margin: 30px;
-    width: 760px;
-}
-
-#liked-drinks{
-    float: left;
-    border: 0.5px rgba(255,255,255,0.5);
-    border-radius: 15px;
-    margin: 30px;
-    padding-right: 100px;
-}
-
-#recommended-drinks{
-    float: left;
-    border: 0.5px rgba(255,255,255,0.5);
-    border-radius: 15px;
-    margin: 30px;
-}
-
-#liked-drinks-list{
-    display: flex;
-    flex-direction: column;
-}
-
-#recommended-drinks-list{
-    display: flex;
-    flex-direction: column;
-}
-
-#liked-header{
-    margin: 10px;
-    padding-left:10px;
-}
-#recommended-header{
-    margin: 10px;
-    padding-left:10px;
-}
-
-#matching-results{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#drink-info{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#image{
-    /* position: absolute; */
-    float: right;
-}
-
-#drink-name-box{
-    /* position: absolute; */
-    float: left;
-}
-
-.main-text:hover{
+.nav{
+    list-style: none;
+    text-align:right;
     background-color: white;
-    color: lightpink;
-    cursor: pointer;
+    color:black;
+    padding: 20px 20px 20px 0;
 }
 
-.main-text{
-    box-shadow: 2px 2px 1px white;
+.nav > li{
+    display: inline-block;
+    padding: 0px 25px 0 25px;
+    font-size: 12px;
+    text-align: right;
 }
 
-.transparent {
-    background:rgba(255,255,255,0.2)
-  }
+.logo{
+    color: black;
+    float: left;
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#nav-menu{
+    text-align: right;
+}
+
+#logo{
+    font-size: 25px;
+}
+
+.banner{
+    width: 100%;
+    display: block;
+}   
+
+.banner > .image-banner{
+    width: 100%;
+    display:block;
+}
+
+#banner-image{
+    opacity: 0.85;
+    height: 300px;
+    object-fit:cover;
+}
+
+#ship-picture{
+    height: 50px;
+    width: 106px;
+    position: relative;
+    top: -15px;
+}
+
+.vodka{
+    position: relative;
+    border: 0.5px black;
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    background:rgba(237, 237, 237, 0.613);
+    float: left;
+    margin-left:30px;
+    margin-right: 30px;
+    top: -170px;
+}
+
+#selection-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#vodka-pic{
+    height: 120px;
+    object-fit:cover;
+}
+
+#memo{
+    text-align:center;
+    position: relative;
+    border: 0.5px black;
+    background:rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    top: -200px;
+    width: 600px;
+    height: 150px;
+    right: -40px;
+    margin-top: 20px;
+}
+#slogan{
+    position: relative;
+    font-size: 25px;
+    display: inline;
+    top: 25px;
+    left: -35px;
+}
+
+#memo-pic{
+    position: relative;
+    height: 150px;
+    width: 120px;
+    float: left;
+    margin-right: 30px;
+
+}
+
+#slogan-content{
+    position: relative;
+    width: 500px;
+    top: 25px;
+}
+
+h2{
+    position: relative; 
+    text-align: center;
+    top: -170px;
+}
+
+#whiskey-pic{
+    height: 130px;
+    object-fit:cover;
+}
+
+#rum-pic{
+    height: 120px;
+    object-fit:cover;
+}
+
+#tequila-pic{
+    height: 130px;
+    object-fit:cover;
+}
+
+.results{
+    margin: auto;
+    position: relative;
+    border: 0.5px black;
+    background:rgba(237, 237, 237, 0.613);
+    border-radius: 15px;
+    width:1000px;
+    top:-100px;
+    height: 200px;
+    margin-bottom: 20px;
+}
