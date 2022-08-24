@@ -9,13 +9,15 @@
     <style>
         .drink-pic{
             position: relative;
-            height: 140px;
+            height: 150px;
+            width: 150px;
             top: 40px;
-            right: -40px;
+            right: -10px;
+            object-fit: scale-down;
         }
         .drink-name{
             position: relative;
-            right: -200px;
+            right: -170px;
             top: -120px;
         }
         .ingredients{
@@ -70,7 +72,7 @@
             color: white;
             padding-left: 5px;
             padding-right: 5px;
-            top: -130px;
+            top: -100px;
             right: -170px;
         }
         #recipe-button:hover{
@@ -102,6 +104,9 @@
             right: 14px;
             font-size: 40px;
             transform: rotate(45deg);
+            cursor: pointer;
+        }
+        #heart{
             cursor: pointer;
         }
     </style>
@@ -155,16 +160,17 @@
             <img class="drink-pic" src="https://pngitem.com/pimgs/m/147-1473539_tequila-bottles-png-patron-tequila-silver-png-transparent.png">
         </div>
         <h3 class="drink-name">*Drink Name*</h3>
-        <p class="ingredients">Ingredients:</p>
-        <div class="heart">
-            <span>♡</span>
-        </div>
         <a id="recipe-button" href="#">click for recipe</a>
     </div>
     <img src="/assets/logo.png">
     <div class="blurred-background">
         <div class="pop-up-content">
             <div class="close">+</div>
+            <h5 id="clicked-drink">Drink Name</h5>
+            <p id="recipe-text">
+                *Recipe*
+            </p>
+            <img src="">
         </div>
     </div>
     <script src="index.js"></script>

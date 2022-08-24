@@ -60,3 +60,10 @@ document.querySelector('.close').addEventListener('click', e => {
     e.preventDefault();
     document.querySelector('.blurred-background').style.display = 'none';
 })
+let heartValue = false;
+document.getElementById('heart').addEventListener('click', e => {
+    e.preventDefault();
+    heartValue = !heartValue
+    
+    console.log(heartValue)
+})
