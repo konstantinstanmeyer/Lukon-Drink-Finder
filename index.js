@@ -31,8 +31,6 @@ data.forEach(id => {
         recipeText.textContent = `${genData['drinks'][0]['strInstructions']}`
         drinkPic.src = `${genData['drinks'][0]['strDrinkThumb']}`
         drinkName2.textContent = `${genData['drinks'][0]['strDrink']}`
-        
-
     })})
 }
 
