@@ -118,7 +118,7 @@ document.querySelector('#services').addEventListener('click', e => {
 })
 
 document.querySelector('#contact').addEventListener('click', e => {
-    alert('CONTACT: PAGE NOT FOUND')
+    alert('Connect with the creators on LinkedIn... https://www.linkedin.com/in/luke-chamley/ | https://www.linkedin.com/in/konstantin-stanmeyer/ ')
 })
 
 document.getElementById('recipe-button').addEventListener('click', e => {
